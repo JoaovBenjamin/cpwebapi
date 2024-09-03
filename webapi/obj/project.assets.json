@@ -721,19 +721,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vendi\\.nuget\\packages\\": {}
+    "C:\\Users\\e008187a\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vendi\\OneDrive\\cpwebapi\\webapi\\webapi.csproj",
+      "projectUniqueName": "C:\\Users\\e008187a\\Desktop\\cpwebapi-1\\webapi\\webapi.csproj",
       "projectName": "webapi",
-      "projectPath": "C:\\Users\\vendi\\OneDrive\\cpwebapi\\webapi\\webapi.csproj",
-      "packagesPath": "C:\\Users\\vendi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vendi\\OneDrive\\cpwebapi\\webapi\\obj\\",
+      "projectPath": "C:\\Users\\e008187a\\Desktop\\cpwebapi-1\\webapi\\webapi.csproj",
+      "packagesPath": "C:\\Users\\e008187a\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\e008187a\\Desktop\\cpwebapi-1\\webapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vendi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\e008187a\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -745,8 +745,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\vendi\\OneDrive\\cpwebapi\\service\\service.csproj": {
-              "projectPath": "C:\\Users\\vendi\\OneDrive\\cpwebapi\\service\\service.csproj"
+            "C:\\Users\\e008187a\\Desktop\\cpwebapi-1\\service\\service.csproj": {
+              "projectPath": "C:\\Users\\e008187a\\Desktop\\cpwebapi-1\\service\\service.csproj"
             }
           }
         }
@@ -755,6 +755,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -793,7 +798,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,6 +1,7 @@
 using Microsoft.OpenApi.Models;
 using service;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
@@ -36,6 +37,9 @@ if(app.Environment.IsDevelopment()){
         c.InjectStylesheet("/swagger-ui/custom.css");
         c.InjectJavascript("/swagger-ui/custom.js");
     });
+
+     app.UseAuthentication();
+    app.UseAuthorization();
 }
 
 
@@ -43,3 +47,4 @@ app.UseHttpsRedirection();
 app.MapControllers();
 app.Run();
 
+ 

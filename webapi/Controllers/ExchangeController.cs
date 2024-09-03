@@ -5,13 +5,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using service;
 using webapi.models;
+using Swashbuckle.AspNetCore;
 
 namespace webapi.Controllers
 {
 
      public interface IExchangeController
     {  
-         JsonResult GetExchangeRate();
+         Task<JsonResult> GetExchangeRate();
     }
 
     [Route("api/[controller]")]
@@ -24,28 +25,19 @@ namespace webapi.Controllers
             _externalApiService = externalApiService;
         }
 
-         public JsonResult GetExchangeRate()
-        {
-            var exchangeRate = new
-            {
-                CurrencyPair = "USD/BRL",
-                Rate = 5.25, 
-                Date = DateTime.Now
-            };
-
-            return Json(exchangeRate);
-        }
-
-        public ExternalApiService Get_externalApiService()
-        {
-            return _externalApiService;
-        }
-
-        [HttpGet("GetExternalExchangeRate")]
-        public async Task<IActionResult> GetExternalExchangeRate()
-        {
-            var data = await _externalApiService.GetAsync();
-            return Ok(data);
-        }
+        [HttpGet("GetExchangeRate")]
+      public async Task<JsonResult> GetExchangeRate()
+{
+    try
+    {
+        var rate = await _externalApiService.GetAsync();
+        var result = new JsonResult(new { conversion_rate = rate });
+        return result; // Retornando diretamente o JsonResult
+    }
+    catch (Exception ex)
+    {
+        return new JsonResult(new { Error = ex.Message }) { StatusCode = 400 }; // Definindo o StatusCode para 400 (BadRequest)
+    }
+}
     }
 }

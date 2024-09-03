@@ -19,21 +19,17 @@ namespace service
 
 
         public async Task<string> GetAsync(){
-            var response = await _httpClient.GetAsync("https://v6.exchangerate-api.com/v6/8d2b51d86e64e6bca3a0ae45/latest/USD");
-            return await response.Content.ReadAsStringAsync();
-        }
+            var response = await _httpClient.GetAsync($"https://v6.exchangerate-api.com/v6/8d2b51d86e64e6bca3a0ae45/pair/USD/BRL");
+           
 
-     public static async Task Main(string[] args)
-    {
-        // Cria uma instância do HttpClient
-        using (HttpClient client = new HttpClient())
+
+              using (HttpClient client = new HttpClient())
         {
             try
             {
-                // Faz uma requisição GET para uma URL
-                HttpResponseMessage response = await client.GetAsync("https://v6.exchangerate-api.com/v6/8d2b51d86e64e6bca3a0ae45/latest/USD");
+                
+                HttpResponseMessage message = await client.GetAsync($"https://v6.exchangerate-api.com/v6/8d2b51d86e64e6bca3a0ae45/pair/USD/BRL");
 
-                // Verifica se o status da resposta indica sucesso
                 if (response.IsSuccessStatusCode)
                 {
                     // Lê o conteúdo da resposta como string
@@ -50,8 +46,16 @@ namespace service
             {
                 Console.WriteLine($"Ocorreu um erro: {ex.Message}");
             }
+
+             return await response.Content.ReadAsStringAsync();
+
         }
     }
 
+
+
+        }
+
+    
     }
-}
+
