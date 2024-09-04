@@ -18,8 +18,8 @@ namespace service
 
 
 
-        public async Task<string> GetAsync(){
-            var response = await _httpClient.GetAsync($"https://v6.exchangerate-api.com/v6/8d2b51d86e64e6bca3a0ae45/pair/USD/BRL");
+        public async Task<string> GetAsync(string toCurrency, string FromCurrency){
+            var response = await _httpClient.GetAsync($"https://v6.exchangerate-api.com/v6/8d2b51d86e64e6bca3a0ae45/pair/{toCurrency}/{FromCurrency}");
            
 
 
@@ -28,7 +28,7 @@ namespace service
             try
             {
                 
-                HttpResponseMessage message = await client.GetAsync($"https://v6.exchangerate-api.com/v6/8d2b51d86e64e6bca3a0ae45/pair/USD/BRL");
+                HttpResponseMessage message = await client.GetAsync($"https://v6.exchangerate-api.com/v6/8d2b51d86e64e6bca3a0ae45/pair/{toCurrency}/{FromCurrency}");
 
                 if (response.IsSuccessStatusCode)
                 {

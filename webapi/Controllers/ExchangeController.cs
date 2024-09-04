@@ -14,7 +14,7 @@ namespace webapi.Controllers
 
      public interface IExchangeController
     {  
-         Task<JsonResult> GetExchangeRate();
+         Task<JsonResult> GetExchangeRate(string toCurrency, string FromCurrency);
     }
 
     [Route("api/[controller]")]
@@ -28,11 +28,11 @@ namespace webapi.Controllers
         }
 
         [HttpGet("GetExchangeRate")]
-      public async Task<JsonResult> GetExchangeRate()
+      public async Task<JsonResult> GetExchangeRate(string toCurrency, string FromCurrency)
 {
         try
     {
-        var jsonResponse = await _externalApiService.GetAsync();
+        var jsonResponse = await _externalApiService.GetAsync( toCurrency,  FromCurrency);
 
         var jsonObject = JObject.Parse(jsonResponse);
 
@@ -40,7 +40,7 @@ namespace webapi.Controllers
         
         if (double.TryParse(conversionRateString, out double conversionRate))
         {
-            var result = new JsonResult(new { ConversionRate = conversionRate });
+            var result = new JsonResult(new { ConversionRate = conversionRate, toCurrency = toCurrency, FromCurrency = FromCurrency });
             return result;
         }
         else

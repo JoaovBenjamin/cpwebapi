@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "iUBw5L5Ioic=",
+  "dgSpecHash": "5TKmQlHV4JU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\e008187a\\Desktop\\cpwebapi-1\\service\\service.csproj",
+  "projectFilePath": "C:\\Users\\labsfiap\\Desktop\\cpwebapi\\service\\service.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\e008187a\\.nuget\\packages\\system.net.http.json\\8.0.0\\system.net.http.json.8.0.0.nupkg.sha512",
-    "C:\\Users\\e008187a\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
-    "C:\\Users\\e008187a\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+    "C:\\Softwares\\Nuget\\system.net.http.json\\8.0.0\\system.net.http.json.8.0.0.nupkg.sha512",
+    "C:\\Softwares\\Nuget\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Softwares\\Nuget\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -21,3 +21,15 @@ C:\Users\e008187a\Desktop\cpwebapi-1\service\obj\Debug\net8.0\service.dll
 C:\Users\e008187a\Desktop\cpwebapi-1\service\obj\Debug\net8.0\refint\service.dll
 C:\Users\e008187a\Desktop\cpwebapi-1\service\obj\Debug\net8.0\service.pdb
 C:\Users\e008187a\Desktop\cpwebapi-1\service\obj\Debug\net8.0\ref\service.dll
+C:\Users\labsfiap\Desktop\cpwebapi\service\bin\Debug\net8.0\service.deps.json
+C:\Users\labsfiap\Desktop\cpwebapi\service\bin\Debug\net8.0\service.dll
+C:\Users\labsfiap\Desktop\cpwebapi\service\bin\Debug\net8.0\service.pdb
+C:\Users\labsfiap\Desktop\cpwebapi\service\obj\Debug\net8.0\service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\labsfiap\Desktop\cpwebapi\service\obj\Debug\net8.0\service.AssemblyInfoInputs.cache
+C:\Users\labsfiap\Desktop\cpwebapi\service\obj\Debug\net8.0\service.AssemblyInfo.cs
+C:\Users\labsfiap\Desktop\cpwebapi\service\obj\Debug\net8.0\service.csproj.CoreCompileInputs.cache
+C:\Users\labsfiap\Desktop\cpwebapi\service\obj\Debug\net8.0\service.sourcelink.json
+C:\Users\labsfiap\Desktop\cpwebapi\service\obj\Debug\net8.0\service.dll
+C:\Users\labsfiap\Desktop\cpwebapi\service\obj\Debug\net8.0\refint\service.dll
+C:\Users\labsfiap\Desktop\cpwebapi\service\obj\Debug\net8.0\service.pdb
+C:\Users\labsfiap\Desktop\cpwebapi\service\obj\Debug\net8.0\ref\service.dll
