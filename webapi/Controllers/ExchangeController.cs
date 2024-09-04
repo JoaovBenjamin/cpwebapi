@@ -8,6 +8,7 @@ using webapi.models;
 using Swashbuckle.AspNetCore;
 using System.Text.Json;
 using Newtonsoft.Json.Linq;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace webapi.Controllers
 {
@@ -28,6 +29,9 @@ namespace webapi.Controllers
         }
 
         [HttpGet("GetExchangeRate")]
+        [Tags("Conversor de moedas")]
+        [ProducesResponseType(typeof(ConversionRate), 200)]
+        [ProducesResponseType(404)]
       public async Task<JsonResult> GetExchangeRate(string toCurrency, string FromCurrency)
 {
         try

@@ -11,17 +11,19 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "Minha API v1",
+        Title = "Exchange",
         Version = "v1",
-        Description = "Endpoints de consulta"
+        Description = "Endpoints de consulta da web api Exchange Rate, api que consome e faz as conversões de moedas"
     });
 
     c.SwaggerDoc("v2", new OpenApiInfo
     {
-        Title = "Minha API v2",
+        Title = "Exchange",
         Version = "v2",
-        Description = "Endpoints de manipulação"
+        Description = "Endpoints de consulta da web api Exchange Rate, api que consome e faz as conversões de moedas"
     });
+
+   
 }
 );
 

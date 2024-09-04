@@ -11,6 +11,7 @@ namespace webapi.models
      public interface IConversionRate
     {
         double BRL {get;set;}
+        
     }
     
 

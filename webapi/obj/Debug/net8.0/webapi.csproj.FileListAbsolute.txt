@@ -108,3 +108,4 @@ C:\Users\labsfiap\Desktop\cpwebapi\webapi\obj\Debug\net8.0\refint\webapi.dll
 C:\Users\labsfiap\Desktop\cpwebapi\webapi\obj\Debug\net8.0\webapi.pdb
 C:\Users\labsfiap\Desktop\cpwebapi\webapi\obj\Debug\net8.0\webapi.genruntimeconfig.cache
 C:\Users\labsfiap\Desktop\cpwebapi\webapi\obj\Debug\net8.0\ref\webapi.dll
+C:\Users\labsfiap\Desktop\cpwebapi\webapi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
